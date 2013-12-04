@@ -1,0 +1,18 @@
+{
+    "name": "Picture Map",
+    "description": "view picture app",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/img/icon-128.png"
+    },
+    "developer": {
+        "name": "NAGATSUKI Aoi",
+        "url": "http://www.nagatsuki-do.net"
+    },
+    "default_locale": "ja",
+    "permissions": {
+        "geolocation": {
+            "description": "Required for Map view"
+        }
+    }
+}

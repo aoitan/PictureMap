@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ギャラリーマップ</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            #map-canvas {
+                width: 100%;
+                height: 90%;
+            }
+        </style>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDQdS65jMp1xAb47wuDtysLPEQcSSJMz9g&sensor=true"></script>
+        <script src="./jquery-1.9.1.min.js"></script>
+        <script src="./map_view_script.js"></script>
+    </head>
+    <body onload="map_view_loading()">
+        <div id="map-canvas"></div>
+        <form>
+            <input id="paste_image" style="display:none" type="file" accept="image/*" value="画像を地図に張り付ける" onchange="pasteImagePcOnChange(this.files)"></input>
+            <a id="paste_image_link" href="#" onclick="pasteImageDispatch()">画像を地図に張り付ける</a><br />
+            <a id="relocation_link" href="#" onclick="relocation()">再測位</a>
+        </form>
+    </body>
+</html>
+
+
