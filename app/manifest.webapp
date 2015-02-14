@@ -1,7 +1,7 @@
 {
     "name": "Picture Map",
     "description": "view picture app",
-    "launch_path": "/index.html",
+    "launch_path": "/PictureMap/app/index.html",
     "icons": {
         "128": "/img/icon-128.png"
     },
